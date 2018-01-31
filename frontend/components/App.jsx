@@ -7,11 +7,17 @@ const App = () => (
   <div className="app">
       <header className="top-line">
         <div className="top-col">
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <h1 id="logo">Opus</h1></Link>
-            <ul className="header-list">
-              <Route path="/"><GreetingContainer /></Route>
+          <div className="header-list">
+            <ul>
+              <li>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <h1 id="logo">Opus</h1></Link>
+              </li>
+              <li>
+                <Route path="/"><GreetingContainer /></Route>
+              </li>
             </ul>
+          </div>
         </div>
       </header>
       <div className="main-page">

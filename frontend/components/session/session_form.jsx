@@ -73,7 +73,11 @@ class SessionForm extends React.Component {
 
   render() {
     const correctFont = (this.props.formType === 'signup' ? 'Sign up' : 'Log in');
-
+    const playingMusic = (
+      <div className="music_kids_splash">
+        <img src="http://hevria.com/wp-content/uploads/2016/03/5010624253_43e9f7846a_b.jpg"/>
+      </div>
+    )
     const correctButton = this.props.formType === 'signup' ? <input className="userbutton"
        type="submit" value="Create Account" /> : <input className="userbutton"
           type="submit" value="Log Me In!" />
@@ -126,8 +130,6 @@ class SessionForm extends React.Component {
      );
     return (
       <div className="session-container">
-
-
             {loginFormFull}
 
       </div>
